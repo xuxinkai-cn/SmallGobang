@@ -275,7 +275,7 @@ public class frameListener implements SmallGoBangConfig,MouseListener{
                         }
 
                         //机器落子
-                        //先计算出各个位置的权值
+                        //先遍历计算出各个位置的权值 已经有棋子的位置权值直接为0
                         for(int i=0;i<sgf.local.length;i++) {
                             for(int j=0;j<sgf.local[i].length;j++) {
                                 //首先判断当前位置是否为空
